@@ -10,6 +10,7 @@ Update2 05.01.2017
 *Addet Blips being Globally spawned where Not owned garages are.
 *Addet Blips will be Globally deleted if a garage is owned.
 *Addet the garagesystem works over the Clicksystem from Ultimate
+*Addet Mysql fix thanks to: shemhamphorash
 ```
 
 ```
