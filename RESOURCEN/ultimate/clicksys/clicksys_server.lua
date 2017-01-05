@@ -10,6 +10,25 @@ function player_click ( button, state, clickedElement, x, y, z )
 			return nil
 		end
 		
+		-- garage System start
+		
+		if isElement(clickedElement) then
+			local int_idelement = getElementModel(clickedElement)
+			if int_idelement == 17951 then
+				if getElementData(clickedElement, "owner") == getPlayerName(source) then
+					triggerClientEvent("garagesystem:interact_owned", source, clickedElement)
+					setElementData(source, "interacting", 1)
+				elseif getElementData(clickedElement, "owner") == "none" then
+					triggerClientEvent("garagesystem:interact_notowned", source, clickedElement)
+					setElementData(source, "interacting", 1)
+				else
+					outputChatBox ( "Die Garage wurde bereits gekauft!", source, 220, 100, 1 )
+				end
+			end
+		end
+		
+		-- garage System end
+		
 		if vioGetElementData ( source, "adminEnterVehicle" ) then
 			
 			if isElement ( clickedElement ) then

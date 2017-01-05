@@ -355,6 +355,7 @@ function register_func ( player, passwort, bday, bmon, byear, geschlecht )
 				triggerClientEvent ( player, "starttutorial", player, Skinid )
 				setPlayerHudComponentVisible ( player, "all", false )
 				insertPlayerIntoLoggedIn ( pname, getPlayerIP(player), getPlayerSerial(player) )
+				setElementData(player, "interacting", 0)
 			end
 	end
 end
@@ -636,6 +637,9 @@ function login_func ( player, passwort )
 							checkmsgs ( player )
 							
 							blacklistLogin ( pname )
+							
+							setElementData(player, "interacting", 0)
+							triggerEvent("garagesystem:setupblips", player, player)
 							
 							if isElement ( houses["pickup"][getPlayerName(player)] ) then
 								local x, y, z = getElementPosition (houses["pickup"][getPlayerName(player)])
