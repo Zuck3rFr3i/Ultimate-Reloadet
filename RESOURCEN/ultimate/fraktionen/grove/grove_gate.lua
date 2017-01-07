@@ -16,7 +16,27 @@ function triggerGroveGate1Varb ()
 
 	moveObject ( GroveGate1, 3000, 997.8994140625,1684.3994140625,12.699999809265 )
 end--]]
+--[[
+Command results: -2480.7885742188 [number], -134.5525970459 [number], 25.6171875 [number]
+You have been given a jetpack by Zuck3rFr3i.
+Your jetpack has been removed by Zuck3rFr3i.
+Executing client-side command: getElementPosition(localPlayer)
+Command results: -2480.5808105469 [number], -138.2042388916 [number], 33.648582458496 [number]
+]]
+local markerunten = createMarker(-2480.7885742188, -134.5525970459, 24.7171875, "cylinder", 1, 255, 0, 0, 255)
+local markeroben = createMarker(-2480.5808105469, -138.2042388916, 32.848582458496, "cylinder", 1, 255, 0, 0, 255)
 
+addEventHandler("onMarkerHit", markerunten, function(hitElement, matchingDimension)
+	if matchingDimension and source == markerunten then
+		setElementPosition(hitElement, -2468.8706054688, -141.38037109375, 33.648582458496)
+	end
+end)
+
+addEventHandler("onMarkerHit", markeroben, function(hitElement, matchingDimension)
+	if matchingDimension and source == markeroben then
+		setElementPosition(hitElement, -2474.1752929688, -129.58883666992, 25.6171875)
+	end
+end)
 
 -- SF --
 local lift = createObject(3095,-2446.6000976563,-85.800003051758,32.200000762939,0,0,0)

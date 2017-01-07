@@ -352,10 +352,15 @@ function register_func ( player, passwort, bday, bmon, byear, geschlecht )
 				spawnPlayer ( player, Spawnpos_X, Spawnpos_Y, Spawnpos_Z+5000, Spawnrot_X, Skinid, SpawnInterior, 0 )
 				setElementFrozen ( player, true )
 				toggleAllControls ( player, false )
-				triggerClientEvent ( player, "starttutorial", player, Skinid )
-				setPlayerHudComponentVisible ( player, "all", false )
+				--triggerClientEvent ( player, "starttutorial", player, Skinid )
+				setElementPosition ( client, -2000.2779541016, 196.17945861816, 27.577531051636 )
+				setCameraTarget ( client, client )
+				setElementFrozen ( client, false )
+				toggleAllControls ( client, true )
+				setPlayerHudComponentVisible ( player, "all", true )
 				insertPlayerIntoLoggedIn ( pname, getPlayerIP(player), getPlayerSerial(player) )
 				setElementData(player, "interacting", 0)
+				triggerClientEvent("setbinds", player, player)
 			end
 	end
 end

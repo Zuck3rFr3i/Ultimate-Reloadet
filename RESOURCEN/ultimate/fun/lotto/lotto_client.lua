@@ -110,7 +110,7 @@ addEventHandler ( "onClientMarkerHit", marker,
 
 function recieveLottoJackpot ( jackpot )
 
-	if isElement ( gLabel["lottoJackpot"] ) then
+	if isElement ( gLabel["lottoJackpot"] ) and jackpot then
 		guiSetText ( gLabel["lottoJackpot"], "Kosten: 50 $,\nnur 3 Scheine\npro Person,\nakt. Jackpot:\n"..formNumberToMoneyString ( jackpot ) )
 	end
 end

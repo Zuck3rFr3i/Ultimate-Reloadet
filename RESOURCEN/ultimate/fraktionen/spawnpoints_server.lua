@@ -113,7 +113,7 @@
 						setPlayerNewSpawnpoint ( player, -2186.9316, -2322.244, 30.625, 0, 0, 0 )
 						triggerClientEvent ( player, "infobox_start", getRootElement(), "\n\nSpawnpunkt\ngeändert!", 5000, 0, 125, 0 )
 					elseif sType == "lv" then
-						setPlayerNewSpawnpoint ( player, 1126.712890625, -12.259765625, 1002.0859375, 0, 12, 0 )
+						setPlayerNewSpawnpoint ( player, -2186.9316, -2322.244, 30.625, 0, 12, 0 )
 						triggerClientEvent ( player, "infobox_start", getRootElement(), "\n\nSpawnpunkt\ngeändert!", 5000, 0, 125, 0 )
 					end
 				elseif faction == 10 then

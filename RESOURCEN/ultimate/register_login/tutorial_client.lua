@@ -544,6 +544,12 @@ function endtutorial ( )
 	triggerServerEvent ( "tutorialended", localPlayer )
 end
 
+addEvent("setbinds", true)
+addEventHandler("setbinds", localPlayer, function()
+	bindKey ("b", "down", showOtherHud)
+	showOtherHud ()
+	setPlayerHudComponentVisible ( "all", true )
+end)
 
 
 
