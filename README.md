@@ -4,6 +4,16 @@ Ultimate Script from Bonus reworked
 Das Ultimate script ist von Bonus!! ich Update es jediglich!
 
 ```
+Update2 07.01.2017
+
+*Fixed Baumakrt buy Funktion
+*Fixed Groovestreet helipad lift
+*Disabled the Intro sequence after Registration
+*Fixrd AOD Base spawn
+*Fixed Lotterie(Needs testing)
+```
+
+```
 Update2 05.01.2017
 
 *Addet garage System that allow players to Buy garages, if they habe the right Money for it!
