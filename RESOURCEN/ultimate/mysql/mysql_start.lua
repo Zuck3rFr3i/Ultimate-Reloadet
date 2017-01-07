@@ -1,7 +1,3 @@
-local gMysqlHost = "localhost"
-local gMysqlUser = "root"
-local gMysqlPass = ""
-local gMysqlDatabase = "ultimate_remake"
 handler = nil
 playerUID = {}
 playerUIDName = {}

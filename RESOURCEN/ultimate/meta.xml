@@ -176,6 +176,10 @@
 	<file src="models/264.txd" />
 	<file src="images/header_halloween.png" />
 	
+	<script src="settings\Client_settings.lua" type="client" />
+	<script src="settings\Server_settings.lua" type="server" />
+	<script src="settings\both_settings.lua" type="shared" />
+	
 	<!-- MySQL IMMER als erstes starten!!! --->
 	
 	<script src="mysql\mysql_start.lua" />
@@ -205,12 +209,6 @@
 	<script src="core\clear.lua" />
 	<script src="core\data.lua" />	
 	<script src="core\license.lua" />
-	
-	<script src="settings\handling_settings_server.lua" type="server"/>
-	<script src="settings\settings_client.lua" type="client"/>
-	<script src="settings\settings_server.lua" />
-	<script src="settings\both_settings.lua" />
-	<script src="settings\both_settings.lua" type="client"/>
 	
 	<script src="carsys\carhouses\carhousesettings.lua" />
 	<script src="carsys\carhouses\carhousesettings.lua" type="client"/>
@@ -760,7 +758,7 @@
 	<file src="fraktionen/biker/skins/bikera.txd" />
 	<file src="fraktionen/biker/skins/bikerb.txd" />
 	
-	<map src="schimpanse.map"/>
+	<map src="maps/schimpanse.map"/>
 	<map src="maps\army\army_base.map"/>
 	<map src="maps\army\ufo.map"/>
 	<map src="maps\bahnhof\bahnhof.map"/>
