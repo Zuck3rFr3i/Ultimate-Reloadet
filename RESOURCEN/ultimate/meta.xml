@@ -191,8 +191,6 @@
 	<script src="garage_system/garage_client.lua" type="client" />
 	<script src="garage_system/garage_server.lua" type="server" />
 	
-	<script src="hook_server.lua" />
-	<script src="hook_client.lua" />
 	<script src="core\data_client.lua" type="client"/>	
 	
 	<!-- Client-Settings -->
