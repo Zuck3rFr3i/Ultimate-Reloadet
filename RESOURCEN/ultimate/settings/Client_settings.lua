@@ -4,6 +4,9 @@
 -- and Vio MTA:RL Crew --
 -------------------------
 
+-- Keybind Clients --
+allowSettingKeyBinds = 1
+
 -- Textdraws --
 timeForEveryLetter = 90
 
