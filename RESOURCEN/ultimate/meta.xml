@@ -193,10 +193,6 @@
 	
 	<script src="core\data_client.lua" type="client"/>	
 	
-	<!-- KeybindSystem 
-	<script src="settings_system/settings_client.lua" type="client" cache="false" /> 
-	-->
-	
 	<!-- Client-Settings -->
 	<script src="clientdata\clientdata_client.lua" type="client"/>
 	<script src="clientdata\clientdata_load.lua" type="client"/>

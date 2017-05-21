@@ -4,21 +4,12 @@ Ultimate Script from Bonus reworked
 Das Ultimate script ist von Bonus!! ich Update es jediglich!
 
 ```
-Update4 16.05.2017
-
-*Removed unused Images Saved 2MB
-*Addet Keybind System (Unfinished) allowing players to set there own Keybinds if server allowes it!
-*Some little changes.
-*Questsystem work in progress.
-```
-
-```
-Update3 07.01.2017
+Update2 07.01.2017
 
 *Fixed Baumakrt buy Funktion
 *Fixed Groovestreet helipad lift
 *Disabled the Intro sequence after Registration
-*Fixed AOD Base spawn
+*Fixrd AOD Base spawn
 *Fixed Lotterie(Needs testing)
 ```
 
